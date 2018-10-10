@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+title: ubirch - Documentation and Tutorials
+description: A collection of concepts, documentation and tutorials to make your IoT device data trustworthy.
+show_downloads: false
