@@ -1,4 +1,4 @@
-# ubirch - Documentation and Tutorials
+# Documentation and Tutorials
 
 ## Concepts
 
