@@ -1,6 +1,6 @@
 # Documentation and Tutorials
 
-**[Concepts](#concepts) | [SDK](#device-sdk) | [cloud service](#ubirch-cloud-services) | [Examples](#examples-and-tutorials)**
+**[Concepts](#concepts)** | **[SDK](#device-sdk)** | **[cloud service](#ubirch-cloud-services)** | **[Examples](#examples-and-tutorials)**
 
 ## Concepts
 
