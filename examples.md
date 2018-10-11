@@ -27,7 +27,7 @@ The ubirch-protocol follows the coding paradigm of the msgpack-c implementation:
  
 A simple example to send a _single signed message_:
 
-```C++
+```c
 msgpack_sbuffer *sbuf = msgpack_sbuffer_new();
 ubirch_protocol *proto = ubirch_protocol_new(proto_chained, 0, sbuf, msgpack_sbuffer_write, ed25519_sign, UUID);
 msgpack_packer *pk = msgpack_packer_new(proto, ubirch_protocol_write);
@@ -40,7 +40,7 @@ ubirch_protocol_free(proto);
 
 The corresponding __chained message__, where we connect subsequent messages using their signature is shown below:
 
-```C++
+```c
 msgpack_sbuffer *sbuf = msgpack_sbuffer_new();
 ubirch_protocol *proto = ubirch_protocol_new(proto_chained, 0, sbuf, msgpack_sbuffer_write, ed25519_sign, UUID);
 msgpack_packer *pk = msgpack_packer_new(proto, ubirch_protocol_write);
@@ -62,6 +62,10 @@ ubirch_protocol_free(proto);
 ```
 
 ## Python Client
+
+```python
+proto.message_chained(uuid, 0x00, [1, 2, 3])
+```
 
 ## JavaScript
 

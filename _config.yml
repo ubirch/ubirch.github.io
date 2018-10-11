@@ -4,3 +4,4 @@ title: ubirch
 subtitle: Docs & Tutorials
 description: <b>The Blockchain for Things.</b><br/> A collection of concepts, documentation and tutorials to make your IoT device data trustworthy.
 show_downloads: false
+highlighter: rouge
