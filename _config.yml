@@ -1,4 +1,6 @@
 theme: jekyll-theme-minimal
-title: ubirch - Docs &amp; Tutorials
-description: A collection of concepts, documentation and tutorials to make your IoT device data trustworthy.
+logo: img/ubirch-logo.png
+title: ubirch
+subtitle: Docs & Tutorials
+description: <b>The Blockchain for Things.</b><br/> A collection of concepts, documentation and tutorials to make your IoT device data trustworthy.
 show_downloads: false

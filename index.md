@@ -32,5 +32,7 @@ the original data pipeline.
 Implementations of the ubirch-protocol can be found in the [Device SDKs](sdk). 
 The [C/C++](https://github.com/ubirch/ubirch-protocol) implementation contains a [detailed technical description](https://github.com/ubirch/ubirch-protocol/blob/master/README.md#basic-message-format).
 
+## About ubirch
 
-
+Founded in 2014, ubirch has offices in Cologne and Berlin, where it services global customers. Named “Cool Vendor” by
+Gartner, ubirch is a market leader in IoT security leveraging Blockchain.

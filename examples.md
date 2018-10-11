@@ -2,7 +2,7 @@
 
 ## Before you start
 
-Head over to the [ubirch backend portal](https://ubirch.dev.ubirch.com) and register yourself to get access to the
+Head over to the [ubirch backend portal](https://ubirch.dev.ubirch.com) and [register](cloud-services#registration) yourself to get access to the
 backend services. While you could start sending data directly between two devices and do the verification by hand,
 using the ubirch backend brings you an intermediate step that verifies the signatures, handles the identities 
 (public keys), and provides streaming and blockchain services for verified data.
@@ -60,3 +60,9 @@ ubirch_protocol_finish(proto, pk);
 msgpack_packer_free(pk);
 ubirch_protocol_free(proto); 
 ```
+
+## Python Client
+
+## JavaScript
+
+*work in progress*
