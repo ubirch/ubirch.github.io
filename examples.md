@@ -75,7 +75,7 @@ The library consists of three parts which can be used individually:
 
 > A full, runnable example is located [here](https://github.com/ubirch/example-python).
 
-_Setting up `api`, `keystore` and `protocol`_
+### Setting up `api`, `keystore` and `protocol`
 
 ```python
 import ubirch 
@@ -95,7 +95,8 @@ api = ubirch.API("<YOUR_AUTH_TOKEN>", "dev")
 protocol = Proto(keystore)
 ```
 
-_Initializing the keysore and registering the keys in ubirch backend_
+### Initializing the keysore and registering the keys in ubirch backend
+
 ```python
 keystore.create_ed25519_keypair(identity_uuid)
 reg_message = protocol.message_signed(identity_uuid, UBIRCH_PROTOCOL_TYPE_REG,
@@ -103,7 +104,7 @@ reg_message = protocol.message_signed(identity_uuid, UBIRCH_PROTOCOL_TYPE_REG,
 registration_resp = api.register_identity(reg_message)
 ```
 
-_Creating the device_
+### Creating the device
 
 ```python
 device_create_resp = api.device_create({
@@ -124,7 +125,7 @@ device_create_resp = api.device_create({
 })
 ```
 
-_Sending messages_
+### Sending messages
 
 In general, sending messages looks like this:
 ```python
@@ -167,7 +168,7 @@ message = protocol.message_signed(device_uuid, 0x00, b"some other bytes")
 resp = api.send(message)
 ```
 
-_Sealing and verifying integrity of messages_
+### Sealing and verifying integrity of messages
 
 This is useful when you want to verify the integrity of messages, but don't want to share 
 the messages themself with ubirch. 

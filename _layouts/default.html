@@ -46,7 +46,7 @@
       {% if p.title %}
         {% if p.url == page.url %}
           <h3><a class="active" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></h3>
-          {% include toc.html html=content h_min=2 h_max=3 %}
+          {% include toc.html html=content h_min=2 h_max=2 %}
         {% else %}
           <h3><a class="inactive" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></h3>
         {% endif %}
