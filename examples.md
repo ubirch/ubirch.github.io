@@ -93,7 +93,7 @@ api = ubirch.API("<YOUR_AUTH_TOKEN>", "dev")
 protocol = Proto(keystore)
 ```
 
-### Initializing the keysore and registering the keys in ubirch backend
+### Initializing the KeyStore and registering keys
 
 ```python
 keystore.create_ed25519_keypair(identity_uuid)
@@ -102,7 +102,7 @@ reg_message = protocol.message_signed(identity_uuid, UBIRCH_PROTOCOL_TYPE_REG,
 registration_resp = api.register_identity(reg_message)
 ```
 
-### Creating the device
+### Creating a device
 
 ```python
 device_create_resp = api.device_create({
