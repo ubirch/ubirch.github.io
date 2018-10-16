@@ -71,8 +71,6 @@ The library consists of three parts which can be used individually:
 * `ubirch.Protocol` - the protocol compiler which packages messages and handles signing and verification
 * `ubirch.KeyStore` - a simple key store based on [pyjks](https://pypi.org/project/pyjks/) to store keys and certificates
 
-**Example usage**
-
 > A full, runnable example is located [here](https://github.com/ubirch/example-python).
 
 ### Setting up `api`, `keystore` and `protocol`
