@@ -1,4 +1,4 @@
-# Concepts
+# ubirch - Documentation
 
 The **Blockchain for Things** is a trust infrastructure for data. It is a solution for ensuring the  integrity 
 and authenticity at the packet level of communication. Additionally, with the integration into common blockchain 
