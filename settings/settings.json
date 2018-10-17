@@ -1,0 +1,5 @@
+{
+  "docu_file_server_uri": "https://raw.githubusercontent.com/ubirch/ubirchApiDocs/master/swaggerDocs",
+  "paths_doc": "/docu_paths.json",
+  "swagger_ui_server_uri": "http://developer.ubirch.com/docs/api/"
+}
