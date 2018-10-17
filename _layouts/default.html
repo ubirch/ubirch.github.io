@@ -45,11 +45,11 @@
 <div id="wrapper" class="wrapper">
   <header>
     {% if site.logo %}
-    <img src="{{site.logo | relative_url}}" alt="Logo" />
+    <a href="{{ '/' | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="ubirch" /></a>
     {% endif %}
 
     <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-    <h2>{{ site.subtitle }}</h2>
+    <b>{{ site.subtitle }}</b>
 
 
     <p>{{ site.description | default: site.github.project_tagline }}</p>
