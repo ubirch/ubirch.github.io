@@ -1,8 +1,7 @@
+# REST API Documentation
+
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-standalone-preset.js"></script>
-
-# API
-
 <script language="JavaScript">
   function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -57,6 +56,8 @@
   });
 </script>
 
+## Services
+
 <table>
   <thead>
   <tr>
@@ -68,7 +69,8 @@
   <tbody id="docu_table">
   </tbody>
 </table>
-  
+
+## Swagger Documentation   
 <div id="swagger-ui">
 </div>
 
