@@ -25,6 +25,8 @@ The ubirch-protocol follows the coding paradigm of the msgpack-c implementation:
 6. send the data from the buffer 
 7. clean up (`msgpack_sbuffer_clear()`, `ubirch_protocol_free()`)
  
+> A full, runnable example for the ESP32 platform is located [here](https://github.com/ubirch/example-esp32).
+
 A simple example to send a _single signed message_:
 
 ```c
