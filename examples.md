@@ -12,8 +12,9 @@ You will need to register to receive an authorization token for using the [API](
 ## C/C++
 
 The [C/C++ implementation](https://github.com/ubirch/ubirch-protocol) is a generic implementation and only depends on 
-the availability of the required crypto functions ([Ed25519](https://ed25519.cr.yp.to/)) and the 
-[msgpack-c](https://github.com/msgpack/msgpack-c) library.
+the availability of the required crypto functions [ubirch-mbed-nacl-cm0](https://github.com/ubirch/ubirch-mbed-nacl-cm0)
+(for documentation, see [Ed25519](https://ed25519.cr.yp.to/)) and the [ubirch-mbed-msgpack](https://github.com/ubirch/ubirch-mbed-msgpack)
+library (for documentation, see [msgpack-c](https://github.com/msgpack/msgpack-c)).
 
 The ubirch-protocol follows the coding paradigm of the msgpack-c implementation:
 
@@ -71,6 +72,7 @@ ubirch_protocol_finish(proto, pk);
 msgpack_packer_free(pk);
 ubirch_protocol_free(proto); 
 ```
+> The __response verification__ is described in the  [example-esp32: message response verification](https://github.com/ubirch/example-esp32#message-response-evaluation)
 
 ## Python Client
 [Python client](https://github.com/ubirch/ubirch-protocol-python) is a [Python3](https://www.python.org/) implementation
