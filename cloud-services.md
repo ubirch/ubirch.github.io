@@ -10,31 +10,40 @@ accessing and forwarding of data of your data.
 The portal can be used to see registered devices, visualized data for supported payloads and
 development information to stream and retrieve data from the cloud services.
   
-**Device List**
-![device list](img/portal-1.png)
+* **Device List**
 
-**Data Visualization**  
-![device view](img/portal-2.png)
+  ![device list](img/portal-1.png)
 
-**Developer Information**
-![developer information](img/portal-3.png)
+* **Data Visualization**  
+
+  ![device view](img/portal-2.png)
+
+* **Developer Information**
+
+  ![developer information](img/portal-3.png)
 
 ## Registration
 
 To start development, please follow these steps to register with the ubirch cloud services:
 
-1. Visit [ubirch.dev.ubirch.com](https://ubirch.dev.ubirch.com)
-2. Klick **register** in the top right menu.
-   ![register link](img/registration-1.png)
-3. Select the **service to register** through:
-   ![register using service](img/registration-2.png)
-4. Wait for the **activation** of your account.      
-   ![await registration](img/registration-3.png)
+* Visit [ubirch.dev.ubirch.com](https://ubirch.dev.ubirch.com)
+* Klick **register** in the top right menu.
+
+![register link](img/registration-1.png){width=100%}
+      
+* Select the **service to register** through:
+
+![register using service](img/registration-2.png)
+   
+* Wait for the **activation** of your account.
+      
+![await registration](img/registration-3.png)
+   
 5. **[Login](https://ubirch.dev.ubirch.com)** and use the developer cloud services to create devices and view data.      
 
 ## APIs
 
-> ⚠ Please [register](#registration) before using any of the APIs below.
+> Please [register](#registration) before using any of the APIs below.
 
 - [Data/Verification API](api?url=https://raw.githubusercontent.com/ubirch/ubirchApiDocs/master/swaggerDocs//ubirch/avatar_service/1.0/ubirch_avatar_service_api.json) (v1.0)
   

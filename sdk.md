@@ -39,7 +39,7 @@ pip install ubirch-protocol
 With the JavaScript implementation it is possible to enable hybrid mobile apps and web pages to send messages using the
 ubirch-protocol. Special care has to be taken when using this library to ensure the safety of keys and the data.
 
-> ⚠ THE JAVASCRIPT IMPLEMENTATION IS WORK IN PROGRESS.
+> THE JAVASCRIPT IMPLEMENTATION IS WORK IN PROGRESS.
 
 
 ---
