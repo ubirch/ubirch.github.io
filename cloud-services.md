@@ -10,36 +10,49 @@ accessing and forwarding of data of your data.
 The portal can be used to see registered devices, visualized data for supported payloads and
 development information to stream and retrieve data from the cloud services.
   
-* **Device List**
+### Device List
 
-  ![device list](img/portal-1.png)
+The developer portal lists devices the user has access to. It allows the setting configuration
+parameters abd visualizes data received.
 
-* **Data Visualization**  
+![device list](img/portal-1.png)
 
-  ![device view](img/portal-2.png)
+### Data Visualization  
 
-* **Developer Information**
+The data visualization displays the received data and a graph of data points that are known.
 
-  ![developer information](img/portal-3.png)
+![device view](img/portal-2.png)
+
+### Developer Information
+
+Use the developer information to set up the devices. The information is necessary to access the ubirch
+cloud services, but also to verify responses from the ubirch cloud services on the devices. Please see
+our [examples](examples) for details.
+
+![developer information](img/portal-3.png)
 
 ## Registration
 
 To start development, please follow these steps to register with the ubirch cloud services:
 
-* Visit [ubirch.dev.ubirch.com](https://ubirch.dev.ubirch.com)
-* Klick **register** in the top right menu.
+### 1. Visit [ubirch.dev.ubirch.com](https://ubirch.dev.ubirch.com)
+### 2. Klick **register** in the top right menu.
 
-![register link](img/registration-1.png){width=100%}
+![register link](img/registration-1.png)
       
-* Select the **service to register** through:
+### 3. Select the **service to register** through:
 
-![register using service](img/registration-2.png)
-   
-* Wait for the **activation** of your account.
+![regQister using service](img/registration-2.png)
+
+### 4. Wait for the **activation** of your account.
       
 ![await registration](img/registration-3.png)
    
-5. **[Login](https://ubirch.dev.ubirch.com)** and use the developer cloud services to create devices and view data.      
+### 5. Login: 
+
+After [logging in](https://ubirch.dev.ubirch.com) the developer cloud services are ready to be used. Check the developer info.  
+    
+---
 
 ## APIs
 
