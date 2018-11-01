@@ -17,8 +17,15 @@
     header ul {
       list-style-type: none;
     }
+    header .logo {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    header .logo a {
+      text-align: center;
+    }
     header img {
-      height: 100px;
+      max-width: 200px;
     }
 
     #swagger-ui section {
@@ -45,7 +52,7 @@
 <div id="wrapper" class="wrapper">
   <header>
     {% if site.logo %}
-    <a href="{{ '/' | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="ubirch" /></a>
+    <div class="logo"><a href="{{ '/' | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="ubirch" /></a></div>
     {% endif %}
 
     <h1><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
