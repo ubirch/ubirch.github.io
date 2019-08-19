@@ -34,5 +34,5 @@ The [C/C++](https://github.com/ubirch/ubirch-protocol) implementation contains a
 
 ## About ubirch
 
-Founded in 2014, ubirch has offices in Cologne and Berlin, where it services global customers. Named “Cool Vendor” by
+Founded in 2014, ubirch has offices in Cologne, Berlin and Munich, where it services global customers. Named “Cool Vendor” by
 Gartner, ubirch is a market leader in IoT security leveraging Blockchain.

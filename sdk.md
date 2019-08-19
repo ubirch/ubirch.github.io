@@ -10,15 +10,15 @@ Additionally, for more powerful systems, a Python implementation and an SDK for 
 [Source Code](https://github.com/ubirch/ubirch-protocol) ([ARM mbed OS](https://mbed.com), [ESP32](https://www.espressif.com/en/products/hardware/esp32/overview), 
 [Bosch XDK](https://xdk.bosch-connectivity.com/home), generic C/C++)
 
-A generic implementation that provides the protocol-layer packaging and response verification and required encryption 
-libraries for ARM processors. Other hardware platforms and require a port of the [Ed25519](https://ed25519.cr.yp.to/)
+A generic implementation, that provides the protocol-layer packaging and response verification and required encryption 
+libraries for ARM processors. Other hardware platforms require a port of the [Ed25519](https://ed25519.cr.yp.to/)
 algorithm or a hardware supported implementation.
 
 This library does not provide networking functionality, as the different platforms have varying support for sending
-and receiving data. The library has been successfully used using Bluetooth ([trackle](trackle.de)), Wifi 
+and receiving data. The library has been successfully implemented using Bluetooth ([trackle](https://trackle.de/en/home-en/)), Wifi 
 ([ESP32](https://github.com/ubirch/example-esp32), HTTP/S) and generic modems.   
 
-> To get started with development, see the [C/C++ Example](examples#cc). 
+> To get started with the development, see the [C/C++ Example](examples#cc). 
  
      
 ## Python
