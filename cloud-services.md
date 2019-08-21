@@ -1,5 +1,14 @@
 # Cloud Services
 
+The ubirch could services provide a platform to verify the generated data.
+
+
+
+![data flow](img/Simple-Data-Flow.png)
+
+## Legacy Cloud Services 
+> (do not use for future development)
+
 The ubirch cloud services are provided through a [backend portal](https://ubirch.dev.ubirch.com) and number of 
 [APIs](api) that allow the registration of keys, verification of data and seals and
 accessing and forwarding of data of your data.
