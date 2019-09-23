@@ -36,7 +36,6 @@
          
         for (var i = 0; i < data[j].services.length; i++){
           var row = document.createElement("tr");
-          row.appendChild(document.createElement("td"));
           var link = document.createElement("a");
           link.setAttribute('href', '?url=' + base_url + data[j].services[i].uri);
           link.appendChild(document.createTextNode(data[j].services[i].name));
