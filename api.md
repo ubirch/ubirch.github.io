@@ -59,7 +59,6 @@
   <thead>
   <tr>
     <td><b>Service</b></td>
-    <td></td>
     <td><b>Version</b></td>
   </tr>
   </thead>
