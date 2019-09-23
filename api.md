@@ -2,16 +2,16 @@
 
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-standalone-preset.js"></script>
-<script language="JavaScript">
+<script type="text/javascript">
   function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);
     rawFile.onreadystatechange = function() {
-      if (rawFile.readyState === 4 && rawFile.status == "200") {
+      if (rawFile.readyState === 4 && rawFile.status === 200) {
         callback(rawFile.responseText);
       }
-    }
+    };
     rawFile.send(null);
   }
 
@@ -50,8 +50,8 @@
 
           tbl.appendChild(row);
         }
-
       }
+      //ToDo: Add further elements to table in a similar pattern! 
     });
   });
 </script>
@@ -76,16 +76,19 @@
 
 <script>
 window.onload = function() {
+    console.log("onload");
  var hash = window.location.search.substring(1);
   var regex = /([^&=]+)=([^&]*)/g;
   var m;
   var token = {};
 
+    console.log("before while");
   while (m = regex.exec(hash)) {
     var param = decodeURIComponent(m[1]);
-    var value = decodeURIComponent(m[2]);
-    token[param] = value;
+    token[param] = decodeURIComponent(m[2]);
+    console.log("token[param]" + token[param]);
   }
+    console.log("after while");
 
   // Build a system
   const ui = SwaggerUIBundle({
