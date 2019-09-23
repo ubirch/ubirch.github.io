@@ -28,19 +28,17 @@
       var tbl = document.getElementById("docu_table");
 
       for (var j = 0; j < data.length; j++){
-        var row = document.createElement("tr");
-        row.setAttribute('class', 'info');
-        var header = document.createElement("td");
-        header.setAttribute('colspan', '3');
-        header.appendChild(document.createTextNode(data[j].bundlename));
-        row.appendChild(header);
-        tbl.appendChild(row);
-
+      
+        if (data[j].add_swagger_path == true)
+            var base_url = swagger_path;
+        else 
+            var base_url = "";
+         
         for (var i = 0; i < data[j].services.length; i++){
           var row = document.createElement("tr");
           row.appendChild(document.createElement("td"));
           var link = document.createElement("a");
-          link.setAttribute('href', '?url=' + swagger_path + data[j].services[i].uri);
+          link.setAttribute('href', '?url=' + base_url + data[j].services[i].uri);
           link.appendChild(document.createTextNode(data[j].services[i].name));
           var cell = document.createElement("td");
           cell.appendChild(link);
@@ -76,19 +74,16 @@
 
 <script>
 window.onload = function() {
-    console.log("onload");
  var hash = window.location.search.substring(1);
   var regex = /([^&=]+)=([^&]*)/g;
   var m;
   var token = {};
 
-    console.log("before while");
   while (m = regex.exec(hash)) {
     var param = decodeURIComponent(m[1]);
     token[param] = decodeURIComponent(m[2]);
     console.log("token[param]" + token[param]);
   }
-    console.log("after while");
 
   // Build a system
   const ui = SwaggerUIBundle({
