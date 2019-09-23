@@ -28,7 +28,7 @@
       var tbl = document.getElementById("docu_table");
 
       for (var j = 0; j < data.length; j++){
-      
+        console.log(data[j]);
         if (data[j].add_swagger_path == true)
             var base_url = swagger_path;
         else 
