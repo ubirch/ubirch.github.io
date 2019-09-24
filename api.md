@@ -3,6 +3,7 @@
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-standalone-preset.js"></script>
 <script type="text/javascript">
+
   function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
