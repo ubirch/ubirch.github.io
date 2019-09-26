@@ -86,7 +86,7 @@ window.onload = function() {
 
   // Build a system
   const ui = SwaggerUIBundle({
-      url: token.url ? token.url : "https://raw.githubusercontent.com/ubirch/ubirchApiDocs/master/swaggerDocs/ubirch/avatar_service/1.0/ubirch_avatar_service_api.json",
+      url: token.url ? token.url : "https://niomon.dev.ubirch.com/swagger/swagger.json",
       dom_id: '#swagger-ui',
       deepLinking: true,
       presets: [
