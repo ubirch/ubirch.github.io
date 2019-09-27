@@ -15,7 +15,7 @@ the payload within the ubirch protocol envelope.
 Separating data and cryptographic seal enables customers to integrate the ubirch trust infrastructure without touching
 the original data pipelines.
 
-## How it works in a Nutshell
+## How it Works in a Nutshell
 
 Short overview of the protocol. Check the [details](#utp-details) for more.
 
@@ -25,7 +25,7 @@ The **Ubirch Trust Protocol** (UTP) consists of many chained Ubirch Protocol Pac
 
 ### The UPP
 A **Ubirch Protocol Package** (UPP) consist of two mayor blocks, the UPP-DATA and the SIGNATURE of the UPP-DATA.
-![UTP](img\UPP.png)
+![UPP](img\UPP.png)
 
 * **UPP-DATA:**
   * **VERSION:** Version of the protocol used
@@ -35,6 +35,10 @@ A **Ubirch Protocol Package** (UPP) consist of two mayor blocks, the UPP-DATA an
   * **HASH(DATA):** Hash value of the customer data / payload itself
 * **SIGNATURE:**
   * **SIG(HASH(UPP-DATA)):** Signature of the Hash of the current UPP-DATA
+
+### UPP Chaining
+As already mentioned, UPP chaining is achieved by adding the signature of the previous message to the current one.
+![UPP Chained](img\UPP Chained.png)
 
 
 ## UTP Implementations
