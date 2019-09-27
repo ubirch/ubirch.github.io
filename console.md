@@ -1,4 +1,4 @@
-# The Ubirch Console
+# Ubirch Console
 
 The [Ubirch Console](https://console.demo.ubirch.com) provides browser based user interface for a couple of functions that allow the registration and management of things/devices, which are running the [Ubirch Nano Client](sdk).
 

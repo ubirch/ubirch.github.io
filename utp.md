@@ -1,4 +1,4 @@
-# The Ubirch Trust Protocol (UTP)
+# Ubirch Trust Protocol (UTP)
 
 The Ubirch Trust Protocol (UTP) is an integral part of the data communication between ubirch-enabled devices, services and the ubirch
 cloud services. It is a data format definition with the minimal required information to secure the integrity and
@@ -19,4 +19,4 @@ the original data pipelines.
 Implementations of the UTP can be found in the [Ubirch Nano Client](sdk), which is available in different languages, like C or Python.
 
 ## UTP Details
-The [C/C++](https://github.com/ubirch/ubirch-protocol) implementation contains a [detailed technical description](https://github.com/ubirch/ubirch-protocol/blob/master/README.md#basic-message-format) regarding the definition and structure of the protocol. 
+The [C/C++](https://github.com/ubirch/ubirch-protocol) implementation contains a [detailed technical description](https://github.com/ubirch/ubirch-protocol/blob/master/README.md#basic-message-format) regarding the definition and structure of the protocol.

@@ -2,8 +2,7 @@
 
 ## Before you start
 
-Head over to the [ubirch backend portal](https://ubirch.dev.ubirch.com) and [register](cloud-services#registration) yourself to get access to the
-backend services. While you could start sending data directly between two devices and do the verification by hand,
+Head over to the [Ubirch Console](https://console.demo.ubirch.com) and [register](console#Register and Login) yourself to get access to the backend services. While you could start sending data directly between two devices and do the verification by hand,
 using the ubirch backend brings you an intermediate step that verifies the signatures, handles the identities
 (public keys), and provides streaming and blockchain services for verified data.
 

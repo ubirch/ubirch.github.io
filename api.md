@@ -1,4 +1,4 @@
-# The Ubirch Trust Service
+# Ubirch Trust Service
 
 The ubirch API provides a couple of services that allow the registration of keys, sending and anchoring Ubirch Protocol Packages (UPPs), things administration and the verification of data and seals.
 
