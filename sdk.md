@@ -3,11 +3,11 @@
 Ubirch provides implementations for different platforms.
 
 For small, embedded devices the SDK is available in:
-* [C/C++](#CC) for different ARM based platforms like ESP32 or Bosch XDK
+* [C/C++](#cc) for different ARM based platforms like ESP32 or Bosch XDK
 
 For more powerful systems like routers, gateways or even PCs and phones the SDK is available in:
-* [Python](#Python), and
-* [JavaScript](#JavaScript).
+* [Python](#python), and
+* [JavaScript](#javascript).
 
 In addition there is also an implementation for *SIM Cards* - please contact us for more information on this.
 
