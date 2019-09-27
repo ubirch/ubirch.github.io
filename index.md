@@ -4,11 +4,16 @@ Ubirch is a blockchain based trust infrastructure for (IoT) data. It is a soluti
 and authenticity at the packet level of data communication. Additionally, with the integration into common blockchain
 technology, temporal integrity of data is guaranteed.
 
+## Components
+
 The Ubirch solution consists of a number of components:
+
 * The **[Ubirch Trust Protocol](utp)** (UTP) definition.
-* The **[Ubirch Nano Client](sdk)**, a lightweight client/**SDK** at thing/device firmware level.
+* The **[Ubirch Nano Client](sdk)**, a lightweight **SDK** at thing/device firmware level.
 * The **[Ubirch Trust Service](api)**, a **REST API** for handling public keys, anchoring and verifying data.
 * The **[Ubirch Console](console)**, an administrative web interface for managing things identities.
+
+all of them are documented with the developer pages.
 
 The individual components enable customer infrastructure to “seal” data packets, send these packets over secured or
 unsecured transmission channels without compromising integrity and use the simple cloud services to verify integrity, order,
