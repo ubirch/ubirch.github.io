@@ -41,7 +41,7 @@ If adding the devices fails, you will see the following error.
 ![add things nok](img\console\009-ubirch-web-ui.png)
 
 ## Delete Things
-Things can be deleted from the system in the things list view (or the [Things Detail View](#Things Detail View)), by clicking the delete button and again confirming with a click on the delete button in the confirmation pop up.
+Things can be deleted from the system in the things list view (or the [Things Detail View](#view-things-details)), by clicking the delete button and again confirming with a click on the delete button in the confirmation pop up.
 ![del thing from list](img\console\018-ubirch-web-ui.png)
 
 ## View Things Details

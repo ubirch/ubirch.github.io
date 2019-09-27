@@ -17,7 +17,7 @@ the original data pipelines.
 
 ## How it works in a Nutshell
 
-Short overview of the protocol. Check the [details](#UTP-Details) for more.
+Short overview of the protocol. Check the [details](#utp-details) for more.
 
 ### The UTP
 The **Ubirch Trust Protocol** (UTP) consists of many chained Ubirch Protocol Packages (UPP).
