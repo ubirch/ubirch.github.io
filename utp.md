@@ -1,4 +1,4 @@
-# Ubirch Trust Protocol (UTP)
+# Ubirch Trust Protocol
 
 The Ubirch Trust Protocol (UTP) is an integral part of the data communication between ubirch-enabled devices, services and the ubirch
 cloud services. It is a data format definition with the minimal required information to secure the integrity and
@@ -23,4 +23,4 @@ The [C/C++](https://github.com/ubirch/ubirch-protocol) implementation contains a
 
 ___
 
-&copy; 2019 ubirch GmbH | [ubirch.com](https://ubirch.com) | [Imprint](http://ubirch.de/impressum/)
+&copy; 2019 ubirch GmbH : [ubirch.com](https://ubirch.com) : [Imprint](http://ubirch.de/impressum/)

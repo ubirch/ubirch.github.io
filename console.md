@@ -54,4 +54,4 @@ You can log out by clicking the logout button in the main menu and confirming yo
 
 ___
 
-&copy; 2019 ubirch GmbH | [ubirch.com](https://ubirch.com) | [Imprint](http://ubirch.de/impressum/)
+&copy; 2019 ubirch GmbH : [ubirch.com](https://ubirch.com) : [Imprint](http://ubirch.de/impressum/)

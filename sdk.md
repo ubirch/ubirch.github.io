@@ -58,4 +58,4 @@ If no platform SDK is provided, using the [Ubirch Trust Protocol](https://github
 
 ___
 
-&copy; 2019 ubirch GmbH | [ubirch.com](https://ubirch.com) | [Imprint](http://ubirch.de/impressum/)
+&copy; 2019 ubirch GmbH : [ubirch.com](https://ubirch.com) : [Imprint](http://ubirch.de/impressum/)
