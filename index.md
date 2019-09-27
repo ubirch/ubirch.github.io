@@ -1,4 +1,4 @@
-# Ubirch Developer Documentation
+# Ubirch
 
 Ubirch is a blockchain based trust infrastructure for (IoT) data. It is a solution for ensuring the integrity
 and authenticity at the packet level of data communication. Additionally, with the integration into common blockchain
@@ -14,7 +14,7 @@ The individual components enable customer infrastructure to “seal” data pack
 unsecured transmission channels without compromising integrity and use the simple cloud services to verify integrity, order,
 omission or duplication and authenticity of individual data packets or streams.
 
-## About ubirch
+## About Ubirch GmbH
 
 Founded in 2014, ubirch has offices in Cologne, Berlin and Munich, where it services global customers. Named “Cool Vendor” by
 Gartner, ubirch is a market leader in IoT security leveraging Blockchain. Find out more at [ubirch.com](https://ubirch.com)
