@@ -20,7 +20,7 @@ After a successful login you will see the **Home** screen, showing you some basi
 The **Things** screen will list your active things and enable you, to add devices.
 ![things](img\console\004-ubirch-web-ui.png)
 
-### Add Things
+## Add Things
 Click the **Add New Device** button to add a new thing to the system.
 ![add things](img\console\005-ubirch-web-ui.png)
 
@@ -40,14 +40,18 @@ And the things counter on the home screen will be updated.
 If adding the devices fails, you will see the following error.
 ![add things nok](img\console\009-ubirch-web-ui.png)
 
-### Delete Things
+## Delete Things
 Things can be deleted from the system in the things list view (or the [Things Detail View](#Things Detail View)), by clicking the delete button and again confirming with a click on the delete button in the confirmation pop up.
 ![del thing from list](img\console\018-ubirch-web-ui.png)
 
-### View Things Details
+## View Things Details
 By clicking a thing in the things list view you will get to the things detail view. Here you can change and save the description of a thing, delete the thing selected and view the **API configuration (apiConfig)** for this thing.
 ![things detail view](img\console\015-ubirch-web-ui.png)
 
 ## Logout
 You can log out by clicking the logout button in the main menu and confirming your logout request.
 ![logout](img\console\020-ubirch-web-ui.png)
+
+___
+
+&copy; 2019 ubirch GmbH | [ubirch.com](https://ubirch.com) | [Imprint](http://ubirch.de/impressum/)

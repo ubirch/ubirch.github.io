@@ -20,3 +20,7 @@ Implementations of the UTP can be found in the [Ubirch Nano Client](sdk), which 
 
 ## UTP Details
 The [C/C++](https://github.com/ubirch/ubirch-protocol) implementation contains a [detailed technical description](https://github.com/ubirch/ubirch-protocol/blob/master/README.md#basic-message-format) regarding the definition and structure of the protocol.
+
+___
+
+&copy; 2019 ubirch GmbH | [ubirch.com](https://ubirch.com) | [Imprint](http://ubirch.de/impressum/)

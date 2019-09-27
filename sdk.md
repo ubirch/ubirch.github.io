@@ -55,3 +55,7 @@ For [node.js](https://nodejs.org), browser, mobile apps, etc. With the JavaScrip
 ## Other
 
 If no platform SDK is provided, using the [Ubirch Trust Protocol](https://github.com/ubirch/ubirch-protocol/blob/master/README.md#basic-message-format) definition and the [API documentation](api) allows the use of the backend infrastructure without an existing specialized implementation.
+
+___
+
+&copy; 2019 ubirch GmbH | [ubirch.com](https://ubirch.com) | [Imprint](http://ubirch.de/impressum/)

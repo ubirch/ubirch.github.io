@@ -110,3 +110,7 @@ window.onload = function() {
   window.ui = ui
 }
 </script>    
+
+___
+
+&copy; 2019 ubirch GmbH | [ubirch.com](https://ubirch.com) | [Imprint](http://ubirch.de/impressum/)

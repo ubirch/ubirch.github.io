@@ -2,6 +2,6 @@ theme: jekyll-theme-minimal
 logo: img/ubirch-logo-single.png
 title: Ubirch Documentation
 subtitle: The Blockchain for Things
-description: A collection of concepts, documentation and tutorials to make your IoT device data trustworthy.
+description: A collection of concepts, documentation and tutorials to make your IoT device data trustworthy by using the Ubirch Turst Protocol.
 show_downloads: false
 highlighter: rouge
