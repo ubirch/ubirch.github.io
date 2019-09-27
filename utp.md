@@ -15,6 +15,28 @@ the payload within the ubirch protocol envelope.
 Separating data and cryptographic seal enables customers to integrate the ubirch trust infrastructure without touching
 the original data pipelines.
 
+## How it works in a Nutshell
+
+Short overview of the protocol. Check the [detail](#UTP Details) for more.
+
+### The UTP
+The **Ubirch Trust Protocol** (UTP) consists of many chained Ubirch Protocol Packages (UPP).
+![UTP](img\UTP.png)
+
+### The UPP
+A **Ubirch Protocol Package** (UPP) consist of two mayor blocks, the UPP-DATA and the SIGNATURE of the UPP-DATA.
+![UTP](img\UPP.png)
+
+* UPP-DATA:
+  * **VERSION:** Version of the protocol used
+  * **UUID:** Device ID
+  * **PREV-SIG:** The signature of the previous UPP,		to interlink the packages
+  * **TYPE:** The type of DATA
+  * **HASH(DATA):** Hash value of the customer data / payload itself
+* SIGNATURE:
+  * **SIG(HASH(UPP-DATA)):** Signature of the Hash of the current UPP-DATA
+
+
 ## UTP Implementations
 Implementations of the UTP can be found in the [Ubirch Nano Client](sdk), which is available in different languages, like C or Python.
 
