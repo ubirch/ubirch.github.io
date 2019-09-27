@@ -27,13 +27,13 @@ The **Ubirch Trust Protocol** (UTP) consists of many chained Ubirch Protocol Pac
 A **Ubirch Protocol Package** (UPP) consist of two mayor blocks, the UPP-DATA and the SIGNATURE of the UPP-DATA.
 ![UTP](img\UPP.png)
 
-* UPP-DATA:
+* **UPP-DATA:**
   * **VERSION:** Version of the protocol used
   * **UUID:** Device ID
-  * **PREV-SIG:** The signature of the previous UPP,		to interlink the packages
+  * **PREV-SIG:** The signature of the previous UPP, to chain the packages
   * **TYPE:** The type of DATA
   * **HASH(DATA):** Hash value of the customer data / payload itself
-* SIGNATURE:
+* **SIGNATURE:**
   * **SIG(HASH(UPP-DATA)):** Signature of the Hash of the current UPP-DATA
 
 
