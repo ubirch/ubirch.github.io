@@ -4,16 +4,19 @@ Ubirch provides implementations for different platforms.
 
 For small, embedded devices the SDK is available in:
 * [C/C++](#cc) for different ARM based platforms like ESP32 or Bosch XDK
+<!-- MicroPython ? -->
 
 For more powerful systems like routers, gateways or even PCs and phones the SDK is available in:
-* [Python](#python), and
-* [JavaScript](#javascript).
+* [Python](#python)
+* [JavaScript](#javascript)
+<!-- Java ? -->
 
 In addition there is also an implementation for *SIM Cards* - please contact us for more information on this.
 
 ## C/C++
-**Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol)
-**Example:** [C/C++ Example Code](examples)
+
+* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol)
+* **Example:** [C/C++ Example Code](examples)
 
 The [C/C++ implementation](https://github.com/ubirch/ubirch-protocol) can be used with ARM based platforms like
 
@@ -35,8 +38,9 @@ This implementations should be generic enough to be portable to other C/C++ base
 
 
 ## Python
-**Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-python)
-**Example:** [Python Example Code](examples)
+
+* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-python)
+* **Example:** [Python Example Code](examples)
 
 For aggregators and Linux based systems, a Python client is available. This client supports packaging and verification, software encryption and additionally provides easy access to the [ubirch API](api). The python implementation is by
 far the quickest way to [get started](examples#python-client) with the ubirch-protocol.
@@ -49,8 +53,8 @@ pip install ubirch-protocol
 ## JavaScript
 > THE JAVASCRIPT IMPLEMENTATION IS WORK IN PROGRESS.
 
-**Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-js)
-**Example:** [JavaScript Example Code](examples)
+* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-js)
+* **Example:** [JavaScript Example Code](examples)
 
 For [node.js](https://nodejs.org), browser, mobile apps, etc. With the JavaScript implementation it is possible to enable hybrid mobile apps and web pages to send messages using the Ubirch Trust Protocol. Special care has to be taken when using this library to ensure the safety of keys and the data.
 
