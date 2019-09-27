@@ -4,14 +4,14 @@
 
 Head over to the [ubirch backend portal](https://ubirch.dev.ubirch.com) and [register](cloud-services#registration) yourself to get access to the
 backend services. While you could start sending data directly between two devices and do the verification by hand,
-using the ubirch backend brings you an intermediate step that verifies the signatures, handles the identities 
+using the ubirch backend brings you an intermediate step that verifies the signatures, handles the identities
 (public keys), and provides streaming and blockchain services for verified data.
 
 You will need to register to receive an authorization token for using the [API](http://developer.ubirch.com/docs/api/swagger-ui.html?url=https://raw.githubusercontent.com/ubirch/ubirchApiDocs/master/swaggerDocs//ubirch/avatar_service/1.0/ubirch_avatar_service_api.json)
 
 ## C/C++
 
-The [C/C++ implementation](https://github.com/ubirch/ubirch-protocol) is a generic implementation and only depends on 
+The [C/C++ implementation](https://github.com/ubirch/ubirch-protocol) is a generic implementation and only depends on
 the availability of the required crypto functions [ubirch-mbed-nacl-cm0](https://github.com/ubirch/ubirch-mbed-nacl-cm0)
 (for documentation, see [Ed25519](https://ed25519.cr.yp.to/)) and the [ubirch-mbed-msgpack](https://github.com/ubirch/ubirch-mbed-msgpack)
 library (for documentation, see [msgpack-c](https://github.com/msgpack/msgpack-c)).
@@ -23,9 +23,9 @@ The ubirch-protocol follows the coding paradigm of the msgpack-c implementation:
 3. write the protocol header (`ubirch_protocol_start()`)
 4. write payload (`msgpack_pack_*()`)
 5. finish the protocol (`ubirch_protocol_finish()`)
-6. send the data from the buffer 
+6. send the data from the buffer
 7. clean up (`msgpack_sbuffer_clear()`, `ubirch_protocol_free()`)
- 
+
 > A full, runnable example for the ESP32 platform is located [here](https://github.com/ubirch/example-esp32).
 
 A simple example to send a __single signed message__:
@@ -37,12 +37,12 @@ msgpack_packer *pk = msgpack_packer_new(proto, ubirch_protocol_write);
 ubirch_protocol_start(proto, pk);
 // ADD YOUR PAYLOAD DATA HERE
 msgpack_pack_int(pk, 99); // exemplary data
-// 
+//
 ubirch_protocol_finish(proto, pk);
 // SEND THE MESSAGE (sbuf->data, sbuf->size)
 msgpack_packer_free(pk);
-ubirch_protocol_free(proto); 
-``` 
+ubirch_protocol_free(proto);
+```
 
 The corresponding __chained message__, where we connect subsequent messages using their signature is shown below:
 
@@ -70,7 +70,7 @@ ubirch_protocol_finish(proto, pk);
 // SEND THE MESSAGE (sbuf->data, sbuf->size)
 
 msgpack_packer_free(pk);
-ubirch_protocol_free(proto); 
+ubirch_protocol_free(proto);
 ```
 > The __response verification__ is described in the  [example-esp32: message response verification](https://github.com/ubirch/example-esp32#message-response-evaluation)
 
@@ -89,7 +89,7 @@ The library consists of three parts which can be used individually:
 ### Setting up `api`, `keystore` and `protocol`
 
 ```python
-import ubirch 
+import ubirch
 
 # minimal ubirch protocol impl that allows you to send signed messages
 class Proto(ubirch.Protocol):
@@ -98,7 +98,7 @@ class Proto(ubirch.Protocol):
         self.__ks = keystore
     def _sign(self, uuid, message):
         return self.__ks.find_signing_key(uuid).sign(message)
-        
+
 
 keystore = ubirch.KeyStore("example-keystore.jks", "example-password")
 api = ubirch.API("<YOUR_AUTH_TOKEN>", "dev")
@@ -146,7 +146,7 @@ response = api.send(message)
 Here are some examples with concrete payload types:
 * `0x32` - a measurement starting with a timestamp...
 ```python
-message = protocol.message_chained(device_uuid, 0x32, 
+message = protocol.message_chained(device_uuid, 0x32,
     [posix_timestamp_micros, 42, 1337])
 resp = api.send(message)
 ```
@@ -162,7 +162,7 @@ resp = api.send(message)
 
 * `0x53` - generic sensor message - just send a json
 ```python
-message = protocol.message_chained(device_uuid, 0x53, 
+message = protocol.message_chained(device_uuid, 0x53,
     {"message": "Hello World!", "foo": 42})
 resp = api.send(message)
 ```
@@ -181,8 +181,8 @@ resp = api.send(message)
 
 ### Sealing and verifying integrity of messages
 
-This is useful when you want to verify the integrity of messages, but don't want to share 
-the messages themself with ubirch. 
+This is useful when you want to verify the integrity of messages, but don't want to share
+the messages themself with ubirch.
 ```python
 payload = b"<YOUR_SENSITIVE_PAYLOAD>"
 payload_hash = hashlib.sha512(payload).digest()  # use hashing function of your choice
@@ -203,10 +203,10 @@ import requests
 
 response = requests.get(
     "https://api.ubirch.{}.ubirch.com/api/avatarService/v1/device/verify/{}"
-    .format("<YOUR_UBIRCH_ENV>", quote(received_message_hash, safe="+=")), 
+    .format("<YOUR_UBIRCH_ENV>", quote(received_message_hash, safe="+=")),
     headers=api._auth
 )
-    
+
 is_message_valid = response.ok
 ```
 

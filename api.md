@@ -1,4 +1,13 @@
-# REST API Documentation
+# The Ubirch Trust Service
+
+The ubirch API provides a couple of services that allow the registration of keys, sending and anchoring Ubirch Protocol Packages (UPPs), things administration and the verification of data and seals.
+
+## Service Overview / Short Description
+* **Ubirch Niomon Service:** Services for sending and anchoring UPPs into the blockchain.
+* **Ubirch Key Service:** Services to register and manage public keys from things.
+* **Ubirch Thing API:** Services to register and manage things (devices).
+* **Ubirch Verification Service:** Service to verify the authenticity and integrity of data via its UTP package against the blockchain.
+* **Ubirch Simple Data Service:** Simple data storage service for demo and test purposes.
 
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
 <script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-standalone-preset.js"></script>
@@ -29,12 +38,12 @@
       var tbl = document.getElementById("docu_table");
 
       for (var j = 0; j < data.length; j++){
-        
+
         if (data[j].add_swagger_path == true)
             var base_url = swagger_path;
-        else 
+        else
             var base_url = "";
-         
+
         for (var i = 0; i < data[j].services.length; i++){
           var row = document.createElement("tr");
           var link = document.createElement("a");
@@ -49,12 +58,12 @@
           tbl.appendChild(row);
         }
       }
-      //ToDo: Add further elements to table in a similar pattern! 
+      //ToDo: Add further elements to table in a similar pattern!
     });
   });
 </script>
 
-## Services
+## Service List
 
 <table>
   <thead>
