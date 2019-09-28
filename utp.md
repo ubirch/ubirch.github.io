@@ -34,7 +34,7 @@ A **Ubirch Protocol Package** (UPP) consist of two mayor blocks, the UPP-DATA an
   * **TYPE:** The type of DATA
   * **HASH(DATA):** Hash value of the customer data / payload itself
 * **SIGNATURE:**
-  * **SIG(HASH(UPP-DATA)):** Signature of the Hash of the current UPP-DATA
+  * **SIG(UPP-DATA):** Signature of the UPP-DATA (ed25519 implementations will additionally hash the UPP-DATA before signing)
 
 ### UPP Chaining
 As already mentioned, UPP chaining is achieved by adding the signature of the previous message to the current one.
