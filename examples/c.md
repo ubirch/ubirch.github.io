@@ -8,57 +8,44 @@ the availability of the required crypto functions [ubirch-mbed-nacl-cm0](https:/
 
 The ubirch-protocol follows the coding paradigm of the msgpack-c implementation:
 
-1. create a buffer to write to (`msgpack_sbuffer_new()`)
-2. initialize the protocol and the msgpack packer (`proto`, `pk`)
-3. write the protocol header (`ubirch_protocol_start()`)
-4. write payload (`msgpack_pack_*()`)
-5. finish the protocol (`ubirch_protocol_finish()`)
-6. send the data from the buffer
-7. clean up (`msgpack_sbuffer_clear()`, `ubirch_protocol_free()`)
+1. create a protocol context and initialize it with UUID and signing callback (`ubirch_protocol_new()`). 
+The protocol context contains a buffer where the protocol package (UPP) will be written to.
+1. generate a UPP with your payload (`ubirch_protocol_message()`)
+1. send the data from the buffer
+1. clean up (`ubirch_protocol_free()`)
 
 A simple example to send a __single signed message__:
 
 ```c
-msgpack_sbuffer *sbuf = msgpack_sbuffer_new();
-ubirch_protocol *proto = ubirch_protocol_new(proto_signed, TYPE, sbuf, msgpack_sbuffer_write, ed25519_sign, UUID); //TYPE = 0
-msgpack_packer *pk = msgpack_packer_new(proto, ubirch_protocol_write);
-ubirch_protocol_start(proto, pk);
-// ADD YOUR PAYLOAD DATA HERE
-msgpack_pack_int(pk, 99); // exemplary data
-//
-ubirch_protocol_finish(proto, pk);
-// SEND THE MESSAGE (sbuf->data, sbuf->size)
-msgpack_packer_free(pk);
-ubirch_protocol_free(proto);
+// create a ubirch protocol context
+ubirch_protocol *upp = ubirch_protocol_new(UUID, ed25519_sign);
+
+// pack a message
+const char *msg = "message";    // exemplary data
+ubirch_protocol_message(upp, proto_signed, UBIRCH_PROTOCOL_TYPE_BIN, msg, strlen(msg));
+
+// SEND THE MESSAGE (upp->data, upp->size)
+
+// free the protocol context
+ubirch_protocol_free(upp);
 ```
 
 The corresponding __chained message__, where we connect subsequent messages using their signature is shown below:
 
 ```c
-msgpack_sbuffer *sbuf = msgpack_sbuffer_new();
-ubirch_protocol *proto = ubirch_protocol_new(proto_chained, TYPE, sbuf, msgpack_sbuffer_write, ed25519_sign, UUID); //TYPE =  0
-msgpack_packer *pk = msgpack_packer_new(proto, ubirch_protocol_write);
+ubirch_protocol *upp = ubirch_protocol_new(UUID, ed25519_sign);
 
 // FIRST MESSAGE
-ubirch_protocol_start(proto, pk);
-msgpack_pack_raw(pk, strlen(TEST_PAYLOAD));
-msgpack_pack_raw_body(pk, TEST_PAYLOAD, strlen(TEST_PAYLOAD));
-ubirch_protocol_finish(proto, pk);
-// STORE THE CURRENT SIGNATURE (proto->signature, UBIRCH_PROTOCOL_SIGN_SIZE)
-// SEND THE MESSAGE (sbuf->data, sbuf->size)
-msgpack_sbuffer_clear(sbuf);
+ubirch_protocol_message(upp, proto_chained, UBIRCH_PROTOCOL_TYPE_BIN, "CHAINED", strlen("CHAINED"));
+
+// SEND THE MESSAGE (upp->data, upp->size)
 
 // SUBSEQUENT MESSAGE
-memcpy(proto->signature, LAST_SIGNATURE, UBIRCH_PROTOCOL_SIGN_SIZE); // LOAD THE SIGNATURE INTO *proto
-ubirch_protocol_start(proto, pk);
-msgpack_pack_raw(pk, strlen("CHAINED"));
-msgpack_pack_raw_body(pk, "CHAINED", strlen("CHAINED"));
-ubirch_protocol_finish(proto, pk);
-// STORE THE CURRENT SIGNATURE (proto->signature, UBIRCH_PROTOCOL_SIGN_SIZE)
-// SEND THE MESSAGE (sbuf->data, sbuf->size)
+ubirch_protocol_message(upp, proto_chained, UBIRCH_PROTOCOL_TYPE_BIN, "MESSAGE", strlen("MESSAGE"));
 
-msgpack_packer_free(pk);
-ubirch_protocol_free(proto);
+// SEND THE MESSAGE (upp->data, upp->size)
+
+ubirch_protocol_free(upp);
 ```
 > The __response verification__ is described in the  [example-esp32: message response verification](https://github.com/ubirch/example-esp32#message-response-evaluation)
 
