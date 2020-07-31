@@ -4,7 +4,7 @@ The ubirch API provides a couple of services that allow the registration of keys
 
 ## Short Description
 * **Ubirch Niomon Service:** Services for sending and anchoring UPPs into the blockchain.
-* **Ubirch Key Service:** Services to register and manage public keys from things.
+* **Ubirch Identity Service:** Service to register and manage public keys from things.
 * **Ubirch Thing API:** Services to register and manage things (devices).
 * **Ubirch Verification Service:** Service to verify the authenticity and integrity of data via its UPP against the blockchain.
 * **Ubirch Simple Data Service:** Simple data storage service for demo and test purposes.
