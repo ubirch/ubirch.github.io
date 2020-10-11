@@ -11,7 +11,6 @@ You will need to register to receive an authorization token for using the [Ubirc
 ## Links to Different Examples and Tutorial
 * [C/C++ example code](examples/c)
 * [Python example code](examples/python)
-* [JavaScript example code](examples/js) (work in progress)
 * [ESP32 tutorial](https://github.com/ubirch/example-esp32) - How To implement the ubirch protocol on the ESP32
 * [MicroPython example code](https://github.com/ubirch/example-micropython)
 * [PyCom tutorial](https://github.com/ubirch/ubirch-testkit) - A step-by-step documentation for using ubirch on a [PyCom](https://pycom.io/) with MicroPython utilizing a prebuild firmware
