@@ -3,7 +3,7 @@
 The ubirch API provides a couple of services that allow the registration of keys, sending and blockchain anchoring [Ubirch Protocol Packages (UPPs)](utp#the-upp), things administration and the verification of data and seals.
 
 ## Short Description
-* **Ubirch Niomon Service:** Services for sending and anchoring UPPs into the blockchain.
+* **UBIRCH Trust API:** Services for sending and anchoring UPPs into the blockchain.
 * **Ubirch Identity Service:** Service to register and manage public keys from things.
 * **Ubirch Thing API:** Services to register and manage things (devices).
 * **Ubirch Verification Service:** Service to verify the authenticity and integrity of data via its UPP against the blockchain.
