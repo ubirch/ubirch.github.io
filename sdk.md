@@ -4,19 +4,19 @@ Ubirch provides implementations for different platforms.
 
 For small, embedded devices the SDK is available in:
 * [C/C++](#cc) for different ARM based platforms like ESP32 or Bosch XDK
-<!-- MicroPython ? -->
+* [MicroPython](#micropython) for MicroPython enabled MCUs (uses the SIM)
 
 For more powerful systems like routers, gateways or even PCs and phones the SDK is available in:
 * [Python](#python)
-* [JavaScript](#javascript)
-<!-- Java ? -->
+* [GoLang](#golang)
+* [Java](#java)
 
 In addition there is also an implementation for *SIM Cards* - please contact us for more information on this.
 
 ## C/C++
 
 * **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol)
-* **Example:** [C/C++ Example Code](examples)
+* **Example:** [C/C++ Example Code](https://github.com/ubirch/ubirch-protocol#api)
 
 The [C/C++ implementation](https://github.com/ubirch/ubirch-protocol) can be used with ARM based platforms like
 
@@ -34,30 +34,43 @@ and receiving data. The library has been successfully used using Bluetooth ([tra
 
 This implementations should be generic enough to be portable to other C/C++ based platforms.
 
-> To get started with development, see the [C/C++ Example](examples#cc).
+> To get started with development, see the [C/C++ Example](https://github.com/ubirch/ubirch-protocol#chained-message-example).
 
+## MicroPython
+
+* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-sim/tree/master/micropython)
+* **Example:** [TestKit with SIM](https://github.com/ubirch/ubirch-testkit)
+
+The MicroPython example uses the SIM nano client and wraps the API.
 
 ## Python
 
 * **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-python)
-* **Example:** [Python Example Code](examples)
+* **Example:** [Python Example Code](https://github.com/ubirch/ubirch-protocol-python/tree/master/examples)
 
-For aggregators and Linux based systems, a Python client is available. This client supports packaging and verification, software encryption and additionally provides easy access to the [ubirch API](api). The python implementation is by
-far the quickest way to [get started](examples#python-client) with the ubirch-protocol.
+For aggregators and Linux based systems, a Python client is available. This client supports packaging and verification, 
+software encryption and additionally provides easy access to the [ubirch API](api). The python implementation is by
+far the quickest way to [get started](https://github.com/ubirch/ubirch-protocol-python/blob/master/examples/example-client.py) 
+with the ubirch-protocol.
 
 You can download and install the python library using [pip](https://pypi.org/project/pip/):
 ```
 pip install ubirch-protocol
 ```
 
-## JavaScript
-> THE JAVASCRIPT IMPLEMENTATION IS WORK IN PROGRESS.
+## GoLang
 
-* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-js)
-* **Example:** [JavaScript Example Code](examples)
+* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-go)
+* **Example:** [Go Client Example](https://github.com/ubirch/ubirch-protocol-go/main) / [Go SIM Client](https://github.com/ubirch/ubirch-protocol-sim/tree/master/go)
 
-For [node.js](https://nodejs.org), browser, mobile apps, etc. With the JavaScript implementation it is possible to enable hybrid mobile apps and web pages to send messages using the Ubirch Trust Protocol. Special care has to be taken when using this library to ensure the safety of keys and the data.
+The Go client can be cross compiled to many different architectures and can easily be used on industrial controllers.
 
+## Java
+
+* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-java)
+* **Example:** [Scala Client Example](https://github.com/ubirch/ubirch-client-scala)
+
+The Java implementation is mostly used for backend purposes and can be used to construct a JVM based client.
 
 ## Other
 
