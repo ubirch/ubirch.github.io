@@ -13,7 +13,7 @@ The Ubirch solution consists of a number of components:
 * The **[Ubirch Trust Service](api)**, a **REST API** for handling public keys, anchoring and verifying data.
 * The **[Ubirch Console](console)**, an administrative web interface for managing things identities.
 * The **[Ubirch Certify App](/ubirch-certify-app/)**, Web-App to create Certificates in the UBIRCH Backend, e.g. UPPs (UBIRCH Protocol Packages) or DCCs (Digital Corona Certificates)
-* The **[Ubirch Verification Widget](/ubirch-verification-js/)**, a JavaScript package to verify UBIRCH Protocol Packages (UPPs)
+* The **[Ubirch Verification Widget](https://developer.ubirch.com/ubirch-verification-js/)**, a JavaScript package to verify UBIRCH Protocol Packages (UPPs)
 
 all of them are documented with the developer pages.
 
