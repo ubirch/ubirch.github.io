@@ -46,11 +46,13 @@ The MicroPython example uses the SIM nano client and wraps the API.
 ## Python
 
 * **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-python)
-* **Example:** [Python Example Code](https://github.com/ubirch/ubirch-protocol-python/tree/master/examples)
+* **Documentation and examples:** [Getting Started, Examples and further reading](https://developer.ubirch.com/ubirch-protocol-python/)
+* **Function Documentation:** [Extensive Documentation of each component's functions](http://developer.ubirch.com/function_documentation/ubirch-protocol-python/)
+
 
 For aggregators and Linux based systems, a Python client is available. This client supports packaging and verification, 
 software encryption and additionally provides easy access to the [ubirch API](api). The python implementation is by
-far the quickest way to [get started](https://github.com/ubirch/ubirch-protocol-python/blob/master/examples/example-client.py) 
+far the quickest way to [get started](https://developer.ubirch.com/ubirch-protocol-python/GettingStarted.html) 
 with the ubirch-protocol.
 
 You can download and install the python library using [pip](https://pypi.org/project/pip/):
