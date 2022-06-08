@@ -18,23 +18,21 @@ In addition there is also an implementation for *SIM Cards* - please contact us 
 * **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol)
 * **Example:** [C/C++ Example Code](https://github.com/ubirch/ubirch-protocol#api)
 
-The [C/C++ implementation](https://github.com/ubirch/ubirch-protocol) can be used with ARM based platforms like
+The C/C++ implementation can be used with ARM based platforms like
 
 * [ARM mbed OS](https://mbed.com),
 * [ESP32](https://www.espressif.com/en/products/hardware/esp32/overview), and
-* [Bosch XDK](https://xdk.bosch-connectivity.com/home).
+* [Bosch XDK](https://developer.bosch.com/products-and-services/sdks/xdk).
 
 It's a generic C/C++ implementation that provides the protocol-layer packaging and response verification and required encryption
 libraries for ARM processors. Other hardware platforms might require a port of the [Ed25519](https://ed25519.cr.yp.to/)
 algorithm or a hardware supported implementation.
 
 This library does not provide networking functionality, as the different platforms have varying support for sending
-and receiving data. The library has been successfully used using Bluetooth ([trackle](trackle.de)), Wifi
+and receiving data. The library has been successfully used using Bluetooth ([trackle](https://trackle.de)), Wifi
 ([ESP32](https://github.com/ubirch/example-esp32), HTTP/S) and generic modems.   
 
 This implementations should be generic enough to be portable to other C/C++ based platforms.
-
-> To get started with development, see the [C/C++ Example](https://github.com/ubirch/ubirch-protocol#chained-message-example).
 
 ## MicroPython
 
@@ -49,7 +47,6 @@ The MicroPython example uses the SIM nano client and wraps the API.
 * **Documentation and examples:** [Getting Started, Examples and further reading](https://developer.ubirch.com/ubirch-protocol-python/)
 * **Function Documentation:** [Extensive Documentation of each component's functions](http://developer.ubirch.com/function_documentation/ubirch-protocol-python/)
 
-
 For aggregators and Linux based systems, a Python client is available. This client supports packaging and verification, 
 software encryption and additionally provides easy access to the [ubirch API](api). The python implementation is by
 far the quickest way to [get started](https://developer.ubirch.com/ubirch-protocol-python/GettingStarted.html) 
@@ -62,8 +59,8 @@ pip install ubirch-protocol
 
 ## GoLang
 
-* **Source Code:** [GitHub](https://github.com/ubirch/ubirch-protocol-go)
-* **Example:** [Go Client Example](https://github.com/ubirch/ubirch-protocol-go/main) / [Go SIM Client](https://github.com/ubirch/ubirch-protocol-sim/tree/master/go)
+* **Source Code and Documentation:** [GitHub](https://github.com/ubirch/ubirch-client-go)
+* **Example:** [Go Client](https://github.com/ubirch/ubirch-protocol-go) / [Go SIM Client](https://github.com/ubirch/ubirch-protocol-sim/tree/master/go)
 
 The Go client can be cross compiled to many different architectures and can easily be used on industrial controllers.
 
