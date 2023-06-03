@@ -1,6 +1,6 @@
 # Ubirch Trust Service
 
-The ubirch API provides a couple of services that allow the registration of keys, sending and anchoring [Ubirch Protocol Packages (UPPs)](utp#the-upp), things administration and the verification of data and seals.
+The ubirch API provides a couple of services that allow the registration of keys, sending and anchoring [Ubirch Protocol Packages (UPPs)](utp#the-upp) (ESG micro-certificates), things administration and the verification of data and seals.
 
 ## Short Description
 * **UBIRCH Trust API:** (Niomon) Services for sending and anchoring UPPs into the blockchain.
