@@ -1,8 +1,8 @@
 # Ubirch
 
-Ubirch is a blockchain based trust infrastructure for (IoT) data. It is a solution for ensuring the integrity
+Ubirch is a trust infrastructure for ESG and other data. It is a solution for ensuring the integrity
 and authenticity at the packet level of data communication. Additionally, with the integration into common blockchain
-technology, temporal integrity of data is guaranteed.
+technology, temporal integrity of data is guaranteed. The cryptographic integrity checks allow for a deeper automation in data-driven processes like ESG data collection and verification.
 
 ## Components
 
@@ -24,7 +24,7 @@ omission or duplication and authenticity of individual data packets or streams.
 ## About Ubirch GmbH
 
 Founded in 2014, ubirch has offices in Cologne, Berlin and Munich, where it services global customers. Named “Cool Vendor” by
-Gartner, ubirch is a market leader in IoT security leveraging Blockchain. Find out more at [ubirch.com](https://ubirch.com)
+Gartner, ubirch is a market leader in Data Integrity Services with a Focus on ESG Data collection. Find out more at [ubirch.com](https://ubirch.com)
 
 ___
 
